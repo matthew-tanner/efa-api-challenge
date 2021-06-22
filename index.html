@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COVID Data</title>
+    <link rel="stylesheet" href="./static/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container-fluid text-sm-center p-5 mb-3 bg-dark">
+      <h1 class="display-1 align-text-center text-light">COVID19</h1>
+      <p class="lead text-light">Global Information on Coronavirus</p>
+    </div>
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-sm text-center align-text-bottom display-6">
+          World Totals
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-sm mb-2">
+          <div class="card shadow">
+            <div class="card-body">
+              <h5 class="card-subtitle mb-2">Cases</h5>
+              <p class="card-text text-center h1" id="total-confirmed"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm mb-2">
+          <div class="card shadow">
+            <div class="card-body">
+              <h5 class="card-subtitle mb-2">Deaths</h5>
+              <p class="card-text text-center h1" id="total-deaths"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card shadow">
+            <div class="card-body">
+              <h5 class="card-subtitle mb-2">Recovered</h5>
+              <p class="card-text text-center h1" id="total-recovered"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <div class="input-group">
+            <span class="input-group-text">Search</span>
+            <input class="form-control" list="country-list-options" id="country-list" placeholder="Country Name...">
+            <datalist id="country-list-options"></datalist>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <ul class="list-group overflow-auto" id="country-list-group">
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer class="footer mt-auto py-3 bg-dark">
+      <div class="container">
+        <span class="text-muted ">Created by Matthew Tanner {kodebytes}</span>
+      </div>
+    </footer>
+    <script src="./static/js/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

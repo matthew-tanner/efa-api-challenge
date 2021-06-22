@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+:root{
+  --confirmed: #ffcc29;
+  --death: #810000;
+  --recover: #5b8a72;
+
+}
+
+body, html {
+  font-family: "Abel", sans-serif !important;
+}
+
+span {
+  margin: 0px 3px 0px 3px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer span {
+  float: right;
+}
+
+.card {
+  width: 17rem;
+  margin: auto;
+}
+
+.row {
+  margin: 5px 0 5px 0;
+}
+
+#country-list-group {
+  max-height: 300px;
+}
+
+#total-confirmed {
+  color: var(--confirmed);
+}
+
+#total-deaths {
+  color: var(--death);
+}
+
+#total-recovered {
+  color: var(--recover);
+}
